@@ -1,4 +1,3 @@
-// src/Dashboard.js
 import React from 'react';
 
 function Dashboard({ onLogout }) {

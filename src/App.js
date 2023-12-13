@@ -48,8 +48,7 @@ function App() {
             Don't have an account?{' '}
             <span classname="hyperlink"
               style={{ color: "yellow", textDecoration: 'none', cursor: 'pointer' }}
-              onClick={() => setShowRegister(true)}
-            >
+              onClick={() => setShowRegister(true)}>
               Register
             </span>
           </p>
