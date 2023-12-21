@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState } from 'react';
 import Login from './Login';
 import Dashboard from './Dashboard';
@@ -10,7 +9,7 @@ function App() {
   const [showRegister, setShowRegister] = useState(false);
 
   const handleLogin = (enteredUsername, enteredPassword) => {
-    const correctUsername = 'user1234';
+    const correctUsername = 'Jayasudhan';
     const correctPassword = 'password';
 
     if (enteredUsername !== correctUsername) {
@@ -36,7 +35,7 @@ function App() {
   };
 
   return (
-    <div className="container">
+    <div className="login-container">
       {isLoggedIn ? (
         <Dashboard onLogout={handleLogout} />
       ) : showRegister ? (

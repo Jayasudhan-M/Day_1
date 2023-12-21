@@ -1,88 +1,93 @@
 /* src/App.css */
 
-  body {
+
+body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh; /* Use min-height instead of height */
   background-image: url('./assests/bg.png');
   background-size: cover;
   background-position: center;
-  transition: background-color 0.3s ease;
 }
-  
-.container {
+.login-container {
   position: relative;
-  width: 300px;
+  max-width: auto; 
+  width: 100%;
   padding: 20px;
-  border-radius: 1px;
+  border-radius: 8px; /* Adjust border-radius as needed */
   overflow: hidden;
-  transition: box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease; 
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
   backdrop-filter: blur(20px);
-  background: rgba(0, 0, 0,0.8) no-repeat center center;
+  background: rgba(0, 0, 0, 0.8) no-repeat center center;
   background-size: cover;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.9), 0 0 40px rgba(26, 26, 26, 0.5), 0 0 80px rgba(0, 0, 0, 0.5);
-  border: 2px solid #f0d437; 
-  color:  #f7d92fe7; 
-  text-align: center; 
-  transform-origin: center; 
+  border: 2px solid #868686;
+  color: #daca3fe7;
+  text-align: center;
+  transform-origin: center;
+  margin: 0 auto; /* Center the container horizontally */
+  margin-top: 50px; /* Add margin-top as needed */
 }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: opacity 0.3s ease; 
-  }
-  
-  label {
-    margin: 0;
-    width: 100%;
-  }
-  
-  input {
-    padding: 10px;
-    margin: 10px;
-    width: calc(100% - 40px);
-    border: 1px solid rgb(255, 217, 0);
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: border 0.3s ease, background-color 0.3s ease, color 0.3s ease; 
-    color: #ffffff; 
-    text-align: center;
-  }
-  
-  input:focus {
-    outline: none;
-    border-color: #ffffff;
-  }
-  p {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 14px;
-    color: #ffffff; /* White text color */
-  }
-  
-  span {
-    color: rgb(255, 196, 0);
-    text-decoration: underline;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  
-  span:hover {
-    color: rgb(255, 196, 0);
-  }
+
 
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: opacity 0.3s ease;
 }
-button {
+
+label {
+  margin: 0;
+  width: 100%;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  width: calc(100% - 40px);
+  border: 1px solid rgb(255, 217, 0);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: border 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  color: #ffffff;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ffffff;
+}
+
+p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+span {
+  color: rgb(255, 196, 0);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+span:hover {
+  color: rgb(255, 196, 0);
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container button {
   background-color: #000000;
   margin-bottom: 10px;
   color: #ffffff;
@@ -93,25 +98,64 @@ button {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
+.login-container button:hover {
   background-color: #ffd82ce0;
   transform: scale(1.05);
   color: #000000;
 }
 
-p {
+.login-container p {
   margin-top: 10px;
   text-align: center;
   font-size: 14px;
-  color: #ffffff; 
+  color: #ffffff;
 }
-a{
+
+.login-container a {
   font-style: none;
 }
 
-.hyperlink{
+.login-container .hyperlink {
   color: #ffffff;
-  color: "red"; 
-  
+  color: "red";
+}
+/* src/App.css */
+
+/* ... Existing styles for login and sign-up pages ... */
+
+.dashboard-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
 }
 
+.dashboard-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.dashboard-app-bar {
+  position: static;
+}
+
+.dashboard-button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dashboard-button:hover {
+  background-color: #45a049;
+}
+
+.dashboard-drawer {
+  width: 250px;
+}
+
+/* ... Other styles for the dashboard ... */

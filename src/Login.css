@@ -1,0 +1,25 @@
+/* Login.css */
+
+.login-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    margin: 20px;
+  }
+  
+  .login-title {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .login-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
